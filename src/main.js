@@ -10,13 +10,20 @@ import axios from 'axios';
 import Vuex from 'vuex'
 import vueTap from 'v-tap';
 import 'lib-flexible'
+import Share from 'vue-social-share';
+import 'vue-social-share/dist/client.css';
+import Less from "less-loader";
+
 
 
 Vue.config.productionTip = false;
 Vue.prototype.$http = axios;
+
 Vue.use(Vant);
 Vue.use(Vuex);
 Vue.use(vueTap);
+Vue.use(Share)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
