@@ -40,7 +40,7 @@ exports.cssLoaders = function (options) {
   const px2remLoader = {
     loader: 'px2rem-loader',
     options: {
-      remUnit: 100   //根据psd的尺寸  ／10 得来
+      remUnit: 37.5   //根据psd的尺寸  ／10 得来
     }
   }
 

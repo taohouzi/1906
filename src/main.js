@@ -9,6 +9,8 @@ import 'vant/lib/index.css';
 import axios from 'axios';
 import Vuex from 'vuex'
 import vueTap from 'v-tap';
+import 'lib-flexible';
+
 
 Vue.config.productionTip = false;
 Vue.prototype.$http = axios;
