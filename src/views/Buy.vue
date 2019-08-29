@@ -1,5 +1,6 @@
 
 
+//购买页面
 <template>
 
   <div class="goods">

@@ -1,5 +1,6 @@
 <template>
   <div>
+<<<<<<< HEAD
     <!--上-->
     <div class="top">
       <div class="top-s">
@@ -54,10 +55,15 @@
         </div>
       </div>
     </van-pull-refresh>
+=======
+
+    <h2>时光记</h2>
+>>>>>>> zxz
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 export default {
   name: "LoveTime",
   data() {
@@ -235,4 +241,13 @@ export default {
   left: 0;
   top: -90px;
 }
+=======
+    export default {
+        name: "LoveTime"
+    }
+</script>
+
+<style scoped>
+
+>>>>>>> zxz
 </style>

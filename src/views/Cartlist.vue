@@ -189,14 +189,14 @@
 
   .main {
     height: 105px;
-    background-color: #fafafa;
+  background-color: #fafafa;
     position: relative;
     width: 100%;
     margin-top:10px;
   }
 
-  .main .checkbox {
-    display: block;
+.main .checkbox {
+  display: block;
     float: left;
     margin: 45px 0 0 10px;
     background-color: white;

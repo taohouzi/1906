@@ -1,16 +1,28 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> zxz
 //解决router-link点击相同路由报错
 const originalPush = Router.prototype.push
 Router.prototype.push = function push(location) {
   return originalPush.call(this, location).catch(err => err)
 }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> zxz
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
+<<<<<<< HEAD
       path: '/',
       name: 'HelloWorld',
       redirect:'/Welcome',// 直接跳转欢迎页
@@ -94,6 +106,23 @@ export default new Router({
           path: '/silkbag', //锦囊
           name: 'Slikbag',
           component: () => import('../views/Silkbag')
+=======
+      path:'/',
+      redirect:'/home'
+    },
+
+
+    {
+      path: '/home',
+      redirect:'/lovetime',
+      name: 'Home',
+      component:()=>import('../views/Home'),
+      children:[
+        {
+          path:'/silkbag',
+          name:'Slikbag',
+          component:()=>import('../views/Silkbag')
+>>>>>>> zxz
         },
         {
           path:'/life',
@@ -116,6 +145,7 @@ export default new Router({
 
         },
 
+<<<<<<< HEAD
         {
           path: '/lovetime',  //时光记
           name: 'LoveTime',
@@ -206,6 +236,29 @@ export default new Router({
       component: () => import('../views/All')
     },
     // 生活
+=======
+
+        {
+          path:'/lovetime',
+          name:'LoveTime',
+          component:()=>import('../views/LoveTime')
+        },
+        {
+          path:'/message',
+          name:'Message',
+          component:()=>import('../views/Message')
+        },
+        {
+          path:'/my',
+          name:'My',
+          component:()=>import('../views/My')
+        },
+
+
+      ]
+
+    },
+>>>>>>> zxz
     {
       path:'/community',
       name:'Community',

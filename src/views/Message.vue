@@ -16,7 +16,7 @@
         <li
           v-for="(item,index) in list"
           v-bind:key="index"
-          style="width:100%-30px;height:42px;border-bottom:1px solid #cecece;padding:20px 15px;"
+          style="width:100%;height:42px;border-bottom:1px solid #cecece;padding:20px 15px;"
           @click="tz(item.pname)"
         >
           <van-image
@@ -47,6 +47,10 @@
         </li> -->
       </ul>
     </div>
+=======
+
+    <h2>消息</h2>
+>>>>>>> zxz
   </div>
 </template>
 
@@ -78,4 +82,6 @@ export default {
 };
 </script>
 <style scoped>
+
+
 </style>

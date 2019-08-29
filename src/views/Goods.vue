@@ -111,7 +111,11 @@
         name: '优惠券名称',
         startAt: 1489104000,
         endAt: 1514592000,
+<<<<<<< HEAD
         valueDesc: '15',
+=======
+        valueDesc: '1.5',
+>>>>>>> zxz
         unitDesc: '元'
     };
     export default {
