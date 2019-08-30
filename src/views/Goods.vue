@@ -8,7 +8,6 @@
       <van-nav-bar title="优品" left-text="返回" left-arrow
                    class="opct"
                    @click-left="onClickLeft"
-                   @click-right="onClickRight"
                    :fixed="true"
       >
         <van-icon name="search" slot="right"/>
@@ -111,11 +110,7 @@
         name: '优惠券名称',
         startAt: 1489104000,
         endAt: 1514592000,
-<<<<<<< HEAD
         valueDesc: '15',
-=======
-        valueDesc: '1.5',
->>>>>>> zxz
         unitDesc: '元'
     };
     export default {
@@ -135,9 +130,7 @@
             onClickLeft() {
                 this.$router.go(-1)
             },
-            onClickRight() {
-                console.log('aa')
-            },
+
             onChange(index) {
                 this.showList = false;
                 this.chosenCoupon = index;
@@ -231,7 +224,7 @@
   .foot .foot-nav span:nth-child(1) {
     margin-left: 10px;
     width:80px;
-    height:20px;
+    height:30px;
     border-radius:5px;
     border:1px solid slategray;
   }
@@ -260,10 +253,14 @@
   .shop figure{
     width:100px;
     height:140px;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .shop figure span{
     display: block;
+  }
+  .shop figure span:nth-child(2){
+    display: block;
+    color: red;
   }
 
 

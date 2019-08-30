@@ -16,7 +16,7 @@
         <li
           v-for="(item,index) in list"
           v-bind:key="index"
-          style="width:100%;height:42px;border-bottom:1px solid #cecece;padding:20px 15px;"
+          style="width:100%-30px;height:42px;border-bottom:1px solid #cecece;padding:20px 15px;"
           @click="tz(item.pname)"
         >
           <van-image
@@ -47,41 +47,35 @@
         </li> -->
       </ul>
     </div>
-=======
-
-    <h2>消息</h2>
->>>>>>> zxz
   </div>
 </template>
 
 <script>
-import axios from "axios";
-export default {
-  name: "Message",
-  path: "/message",
-  data() {
-    return {
-      title: "消息",
-      list: ""
+    import axios from "axios";
+    export default {
+        name: "Message",
+        path: "/message",
+        data() {
+            return {
+                title: "消息",
+                list: ""
+            };
+        },
+        mounted() {
+            axios({
+                url: "http://jx.xuzhixiang.top/ap/api/productlist.php",
+                params: { uid: 20771 }
+            }).then(data => {
+                //console.log(data.data.data);
+                this.list = data.data.data;
+            });
+        },
+        methods: {
+            onClickLeft() {
+                this.$router.go(-1);
+            }
+        }
     };
-  },
-  mounted() {
-    axios({
-      url: "http://jx.xuzhixiang.top/ap/api/productlist.php",
-      params: { uid: 20771 }
-    }).then(data => {
-      console.log(data.data.data);
-      this.list = data.data.data;
-    });
-  },
-  methods: {
-    onClickLeft() {
-      this.$router.go(-1);
-    }
-  }
-};
 </script>
 <style scoped>
-
-
 </style>

@@ -100,7 +100,7 @@ export default {
             password: this.password
           }
         }).then(data => {
-          console.log(data);
+          //console.log(data);
           if (data.data.code == 1) {
             var arr = [];
             if (this.checked == true) {

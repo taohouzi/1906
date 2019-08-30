@@ -51,9 +51,7 @@
             onClickLeft() {
                 this.$router.go(-1)
             },
-            onClickRight() {
-                console.log('aa')
-            },
+
             tobuy(id){
                 this.$router.push('/buy/'+id)
             },

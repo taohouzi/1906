@@ -51,9 +51,9 @@ export default {
     Axios({
       url: "http://106.12.11.4:8888/ShiGuangJi/shiguangji/jiuniang.do"
     }).then(function(data) {
-      console.log(data.data.data.sjiuniangs);
+      //console.log(data.data.data.sjiuniangs);
       _this.shuju = data.data.data.sjiuniangs;
-      console.log(_this.shuju);
+      //console.log(_this.shuju);
     });
   }
 };

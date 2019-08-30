@@ -66,7 +66,7 @@
                 params:{uid:this.uid,}
             }).then((data)=>{
                 this.list=data.data.data
-                console.log(this.list)
+                //console.log(this.list)
             })
         }
     }

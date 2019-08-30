@@ -139,7 +139,7 @@ export default {
             password: this.password
           }
         }).then(res=>{
-           console.log(res.data.code);
+           //console.log(res.data.code);
           if (res.data.code == 1) {
              alert(res.data.msg)
             // this.$store.commit("login", data.data);

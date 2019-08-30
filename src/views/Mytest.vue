@@ -112,7 +112,7 @@ export default {
       }else{
 var uide = localStorage.getItem("token");
  const uid=uide.split(',')
- console.log(uid)
+ //console.log(uid)
  this.$router.push("/setting")
       }
       },
